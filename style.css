@@ -5,19 +5,9 @@
   font-family: "Monaco", monospace, sans-serif;
 }
 
-
 #map {
     height: 1050px; /* Set the height of the map container */
      }
-
-#balkanPeaks{
-  background-image: url("fotos/balkanPeaks.jpeg");
-}
-
-#kerryWay{
-  background-image: url("fotos/kerryWay.png");
-}
-
 
 .sidebar_button{
   width: 100%;
@@ -30,7 +20,8 @@
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px;
   opacity:80%;
-  font-size: 20px
+  font-size: 20px;
+  padding: 0px;
 }
 
 .sidebar_button:hover{
@@ -47,7 +38,6 @@ ul{
     overflow: hidden;
 }
 
-
 li{
     float: left
 }
@@ -57,19 +47,17 @@ li a {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    
-    
-  }
+}
 
 li a:hover {
     background-color: #555;
     color: white;
-  }
+}
 
 /* Create three equal columns that floats next to each other */
 .column {
     float: left;  
-  }
+}
 
 .column.side {
     width: 20%;
@@ -88,5 +76,5 @@ li a:hover {
     content: "";
     display: table;
     clear: both;
-  }
+}
   
