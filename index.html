@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Hikes</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    
+        <link rel='stylesheet' type='text/css' href='style.css'>
+        <link rel="icon" type="image/x-icon" href="fotos/favicon.ico">
+
+        
+
+
+    </head>
+  
+
+    <body>
+        <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Our team</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id = "buttons" class = "column side">
+            <button type="button" id = "balkanPeaks" class = "sidebar_button" onclick = zoomToLocation(balkanPeaks)>Balkan Peaks</button> 
+            <button type="button" id = "kerryWay" class = "sidebar_button" onclick = zoomToLocation(kerryWay)>Kerry Way</button> 
+        </div>
+        <div id="map" class = "column middle"></div>
+
+
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+        <script src="script.js"></script>
+        <script src="zoomToLocation.js"></script>
+        
+    </body>
+
+
+    
+</html>

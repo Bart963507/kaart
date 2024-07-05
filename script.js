@@ -1,0 +1,17 @@
+const map = L.map('map').setView([51.505, -0.09], 13);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+
+
+const kerryWay = omnivore.kml("hikes\\kerryWay.kml").addTo(map);
+const balkanPeaks = omnivore.kml("hikes\\balkanPeaks.kml").addTo(map);
+
+
+
+
+const height = window.screen.height
+console.log(height)
