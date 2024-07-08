@@ -22,7 +22,10 @@
               <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <div id = "buttons" class = "column side"></div>
+
+        <div id = "buttons" class = "column side">
+            <button type="button" id="overview" class="sidebar_button" style="background-image: url(fotos/overview.jpeg );" onclick="createInitialExtent().then(value => {map.fitBounds(value)})">Overview</button>
+        </div>
         <div id="map" class = "column middle"></div>
 
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
